@@ -24,7 +24,7 @@ function starting() {
   });
 }
 
-setInterval(starting, 100)
+setInterval(starting, 1000)
 
 
 function start() {
