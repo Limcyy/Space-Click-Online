@@ -1,38 +1,9 @@
-const text = document.querySelector(".text")
-const startButton = document.querySelector(".startButton")
+const scores = document.querySelector(".scores")
 
-startButton.style.display = "none"
-startButton.addEventListener("click", start)
 
-function ChangeText() {
-    getData("https://awesomeapp-f2b19-default-rtdb.asia-southeast1.firebasedatabase.app/.json").then((data) => {
-   
-        text.innerHTML = data.player2 + " VS " + data.player1
-        startButton.style.display = "block"
-    
+getData("https://awesomeapp-f2b19-default-rtdb.asia-southeast1.firebasedatabase.app/.json").then((data) => {
+    scores.innerHTML = data.player1 + " score:" + data.PointsPlayer1 + " / " + data.player2 + " score:" + data.PointsPlayer2
   });
-}
-
-
-ChangeText()
-
-function starting() {
-    getData("https://awesomeapp-f2b19-default-rtdb.asia-southeast1.firebasedatabase.app/.json").then((data) => {
-    if (data.Starting == "go") {
-        window.location.href = "player2Game.html"
-    } 
-  });
-}
-
-setInterval(starting, 100)
-
-
-function start() {
-    patchData("https://awesomeapp-f2b19-default-rtdb.asia-southeast1.firebasedatabase.app/.json", { Starting: "go" }).then((data) => {
-
-  });
-}
-
 
 
 
@@ -70,9 +41,5 @@ async function patchData(url = "", data = {}) {
     });
     return response.json(); // parses JSON response into native JavaScript objects
   }
-
-
-
-
 
 

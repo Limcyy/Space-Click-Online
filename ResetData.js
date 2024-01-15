@@ -12,6 +12,12 @@ function reset() {
   patchData("https://awesomeapp-f2b19-default-rtdb.asia-southeast1.firebasedatabase.app/.json", { player2: "" }).then((data) => {
 
   });
+  patchData("https://awesomeapp-f2b19-default-rtdb.asia-southeast1.firebasedatabase.app/.json", { PointsPlayer1: "" }).then((data) => {
+
+  });
+  patchData("https://awesomeapp-f2b19-default-rtdb.asia-southeast1.firebasedatabase.app/.json", { PointsPlayer2: "" }).then((data) => {
+
+  });
   console.log("hoj")
 }
 

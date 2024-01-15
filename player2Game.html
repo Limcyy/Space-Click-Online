@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game</title>
+    <style>
+        html, body, main {
+            position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+        }
+        .clickButton {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            
+        }
+        .points {
+           font-size: 100px;
+           display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: fixed;
+          width: 100%;
+          height: 100%;
+         left: 0;
+         top: 0;
+         margin: 0%;
+        }
+        .Time {
+            position: absolute;
+            left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <p class="Time">20s left</p>
+        <p class="points">0</p>
+        <button class="clickButton"></button>
+    </main>
+    <script src="player2Game.js"></script>
+</body>
+</html>
