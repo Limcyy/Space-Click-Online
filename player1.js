@@ -30,7 +30,7 @@ const TextInterval = setInterval( function() {
     }
     
   });
-}, 100)
+}, 1000)
 
 
 function starting() {
@@ -41,7 +41,7 @@ function starting() {
   });
 }
 
-setInterval(starting, 500)
+setInterval(starting, 1000)
 
 
 function start() {
