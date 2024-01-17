@@ -8,7 +8,11 @@ let InputValue = Input.value
 function join() {
 
     getData("https://awesomeapp-f2b19-default-rtdb.asia-southeast1.firebasedatabase.app/.json").then((data) => {
-    if (data.player1 == "" && data.player2 == "") {
+      InputValue = Input.value
+    if (InputValue == "") {
+      console.log("your Name")
+    }
+    else if (data.player1 == "" && data.player2 == "") {
         JoinLobbyPlayer1()
         console.log("pl1")
     }
