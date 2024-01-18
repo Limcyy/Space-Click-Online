@@ -1,10 +1,10 @@
 const score2 = document.querySelector(".score2")
 const score1 = document.querySelector(".score1")
-const resetButton = document.querySelector(".resetButton")
 
-resetButton.addEventListener("click", reset)
 
-setTimeout(function reset() {
+
+
+setTimeout(function() {
   patchData("https://awesomeapp-f2b19-default-rtdb.asia-southeast1.firebasedatabase.app/.json", { Starting: "" }).then((data) => {
 
   });
