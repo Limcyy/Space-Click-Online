@@ -1,49 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Game</title>
     <style>
-        html, body, main {
+        body {
+            background-image: url("pxfuel.jpg");
+            height: 95vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        html,
+        body,
+        main {
             position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
         }
+
         .clickButton {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             position: absolute;
-            
+            background-image: url("mOON.jpg");
+            border: 0px solid #000000;
+            background-position: center;
+            box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+            background-size: 200%;
+            border-radius: 150px;
+            color: #ffffff;
+            cursor: pointer;
+            font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 45px;
+            text-shadow: 2px 2px 8px #575757;
+            font-weight: 1000;
+            padding: 16px 24px;
+            text-align: center;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+
+
         }
+
         .points {
-           font-size: 100px;
-           display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          position: fixed;
-          width: 100%;
-          height: 100%;
-         left: 0;
-         top: 0;
-         margin: 0%;
+            font-size: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            margin: 0%;
+            color: aliceblue;
+            font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 80px;
+            text-shadow: 2px 2px 8px #575757;
+            font-weight: 1000;
         }
+
         .Time {
             position: absolute;
             left: 20px;
+            top: 20px;
+            color: aliceblue;
+            background-image: url("saturn.jpg");
+            background-position: center;
+            background-size: 162%;
+            height: 120px;
+            width: 120px;
+            color: #ffffff;
+            border: 0px solid #000000;
+            border-radius: 90px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 1000;
+            font-size: 22px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 8px #575757;
+            box-shadow: rgba(255, 255, 255, 0.25) 0 1px 15px 5px;
+        }
+
+        .clickButton:hover {
+            color: #ffffff;
+            background-color: #64a020;
+            box-shadow: rgba(255, 255, 255, 0.25) 0 1px 15px 5px;
+            width: 130px;
+            height: 130px;
+            border-radius: 65px;
+            font-size: 50px;
+
+        }
+
+        .clickButton:active {
+            box-shadow: none;
+            height: 120px;
+            width: 120px;
+            font-size: 45px;
         }
     </style>
 </head>
 
 <body>
     <main>
-        <p class="Time">20s left</p>
-        <p class="points">0</p>
+        <div class="Time">20s left</div>
+        <div class="points">0</div>
         <button class="clickButton"></button>
     </main>
     <script src="player2Game.js"></script>
 </body>
+
 </html>
