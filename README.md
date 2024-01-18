@@ -1,3 +1,5 @@
+PLAY here: https://limcyy.github.io/Space-Click-Online/
+
 Two players go against eachother in a 1 VS 1 aim testing SPACE themed game.
 
 I made this game using JS, CSS, HTML and FIREBASE.
