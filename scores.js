@@ -4,7 +4,7 @@ const resetButton = document.querySelector(".resetButton")
 
 resetButton.addEventListener("click", reset)
 
-function reset() {
+setTimeout(function reset() {
   patchData("https://awesomeapp-f2b19-default-rtdb.asia-southeast1.firebasedatabase.app/.json", { Starting: "" }).then((data) => {
 
   });
@@ -20,8 +20,10 @@ function reset() {
   patchData("https://awesomeapp-f2b19-default-rtdb.asia-southeast1.firebasedatabase.app/.json", { PointsPlayer2: "" }).then((data) => {
 
   });
+
   console.log("hoj")
-}
+   
+}, 5000)
 
 getData("https://awesomeapp-f2b19-default-rtdb.asia-southeast1.firebasedatabase.app/.json").then((data) => {
   if (data.PointsPlayer1 > data.PointsPlayer2) {
